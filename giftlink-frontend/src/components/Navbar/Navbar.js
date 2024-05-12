@@ -9,7 +9,10 @@ export default function Navbar() {
                 <ul className="navbar-nav">
                     <li className="nav-item"><Link className="nav-link" to="/home.html">Home</Link></li>
                     <li className="nav-item"><Link className="nav-link" to="/app">Gifts</Link></li>
+                    <Link className="nav-link" to="/app/search">Search</Link>
+
                 </ul>
+
             </div>
         </nav>
     );
