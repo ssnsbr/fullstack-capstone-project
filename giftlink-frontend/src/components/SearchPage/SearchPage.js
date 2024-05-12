@@ -43,7 +43,12 @@ function SearchPage() {
         }).toString();
 
         try {
+            console.log(`${baseUrl}${queryParams}`)
+
             const response = await fetch(`${baseUrl}${queryParams}`);
+            console.log("response")
+
+            console.log(response)
             if (!response.ok) {
                 throw new Error('Search failed');
             }
